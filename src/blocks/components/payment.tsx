@@ -67,7 +67,7 @@ const Payment = () => {
         Check Out
       </div>
       {first ? (
-        <>
+        <>  
           <div className="w-full h-12 flex items-center mt-1">
             <input
               className="h-full text-sm font-light w-[70%] rounded-tl rounded-bl focus:border-[0px] focus:outline-[0px] border-[1px] p-3 border-[#e96269]"
