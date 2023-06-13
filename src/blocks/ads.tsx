@@ -1,4 +1,5 @@
 import styled from "styled-components"
+import CardProps from "../reuseables/CardProps"
 
 const ads = () => {
   return (
@@ -7,7 +8,7 @@ const ads = () => {
         <Wrapper>
            <Title>
              {/* <Word> Top Education offers and deals are listed here</Word> */}
-             <div className="text-3xl sm:text-4xl font-[500] flex items-center w-4/5 h-10 md:h-14">
+             <div className="text-3xl sm:text-4xl font-[600] flex items-center w-4/5 h-10 md:h-14">
              Top Education offers and deals are listed here
     </div>
              <div
@@ -15,6 +16,10 @@ const ads = () => {
         View All
       </div>
            </Title>
+           <Box>
+            <CardProps/>
+   
+           </Box>
         </Wrapper>
     </Container>
     </div>
@@ -23,11 +28,16 @@ const ads = () => {
 
 export default ads
 
-// const Word = styled.div`
-// font-weight: 500;
-// font-size: 40px;
-
-// `
+const Box = styled.div`
+background-color: purple;
+height: 400px;
+width: 100%;
+margin-top: 20px;
+display: flex;
+align-items: center;
+/* justify-content: center; */
+flex-wrap: wrap;
+`
   
 
 const Title = styled.div`
@@ -40,9 +50,9 @@ align-items: center;
 justify-content: space-between;
 `
 const Wrapper = styled.div`
-width: 90%;
+width: 97%;
 height: 90%;
-/* background-color: yellow; */
+background-color: yellow;
 `
 
 const Container = styled.div`
