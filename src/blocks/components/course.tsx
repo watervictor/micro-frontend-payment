@@ -7,6 +7,8 @@ interface course_details_types {
   authorCover: any;
 }
 
+import { MdOutlineCancelPresentation } from "react-icons/md";
+
 const Course: React.FC<course_details_types> = ({
   title,
   author,
@@ -24,8 +26,8 @@ const Course: React.FC<course_details_types> = ({
             src={titleCover}
           />
         </div>
-        <div className="w-full flex flex-col justify-between sm:w-[70%]">
-          <div className="capitalize text-[21px] xl:text-[25px] font-[500] mt-2 sm:mt-0">
+        <div className="w-full flex flex-col gap-4 justify-between sm:w-[70%]">
+          <div className="capitalize leading-tight text-[21px] xl:text-[25px] font-[500] mt-2 sm:mt-0">
             {title}
           </div>
           <div className="w-full flex items-center gap-2">
@@ -44,8 +46,8 @@ const Course: React.FC<course_details_types> = ({
           <div>{`$${present}`}</div>
           <div className="text-slate-300 font-[400] line-through">{`$${former}`}</div>
         </div>
-        <div className="text-red-600 cursor-pointer border-[3px] px-2 pt-1 pb-3 h-6 flex items-center border-red-600">
-          x
+        <div className="text-red-600 cursor-pointer text-2xl flex items-center">
+          <MdOutlineCancelPresentation />
         </div>
       </div>
     </div>
