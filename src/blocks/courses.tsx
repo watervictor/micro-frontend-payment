@@ -6,7 +6,7 @@ const Courses = () => {
   return (
     <div className="w-11/12 flex flex-col items-center">
       <div className="w-full flex flex-col lg:flex-row gap-8 mt-[-47px] md:mt-[-53px]">
-        <div className="w-full lg:w-[70%] flex flex-col gap-8">
+        <div className="w-full lg:w-[65%] flex flex-col gap-8">
           <Course
             authorCover={dummy}
             titleCover={dummy1}
