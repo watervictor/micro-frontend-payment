@@ -6,7 +6,14 @@ const ads = () => {
     <Container>
         <Wrapper>
            <Title>
-              Top Education offers and deals are listed here
+             {/* <Word> Top Education offers and deals are listed here</Word> */}
+             <div className="text-3xl sm:text-4xl font-[500] flex items-center w-4/5 h-10 md:h-14">
+             Top Education offers and deals are listed here
+    </div>
+             <div
+        className="w-24 transition-all hover:shadow-red-300 hover:shadow-xl cursor-pointer text-lg font-normal h-12 flex justify-center items-center text-white bg-[#e96269] rounded">
+        View All
+      </div>
            </Title>
         </Wrapper>
     </Container>
@@ -16,20 +23,30 @@ const ads = () => {
 
 export default ads
 
+// const Word = styled.div`
+// font-weight: 500;
+// font-size: 40px;
+
+// `
+  
+
 const Title = styled.div`
-font-weight: 500;
 display: flex;
 align-items: center;
 margin-top: 40px;
+/* background-color: purple; */
+display: flex;
+align-items: center;
+justify-content: space-between;
 `
 const Wrapper = styled.div`
 width: 90%;
 height: 90%;
-background-color: yellow;
+/* background-color: yellow; */
 `
 
 const Container = styled.div`
-background-color: red;
+background-color: #EFEFF6;
 height: 500px;
 width: 100vw;
 display: flex;
