@@ -29,7 +29,7 @@ const ads = () => {
 export default ads
 
 const Box = styled.div`
-background-color: purple;
+/* background-color: purple; */
 height: 400px;
 width: 100%;
 margin-top: 20px;
@@ -52,7 +52,7 @@ justify-content: space-between;
 const Wrapper = styled.div`
 width: 97%;
 height: 90%;
-background-color: yellow;
+/* background-color: yellow; */
 `
 
 const Container = styled.div`
